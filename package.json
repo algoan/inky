@@ -11,7 +11,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --register @babel/register"
   },
   "dependencies": {
     "cheerio": "^0.20.0",
@@ -20,14 +20,15 @@
     "multiline": "^1.0.2",
     "object-values": "^1.0.0",
     "through2": "^2.0.0",
-    "vinyl-fs": "^2.3.0"
+    "vinyl-fs": "3.0.3"
   },
   "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/register": "7.4.0",
     "assert-html-equal": "^1.0.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-register": "^6.4.3",
     "chalk": "^1.1.1",
-    "mocha": "^2.4.5",
+    "mocha": "6.1.4",
     "rimraf": "^2.5.1"
   },
   "repository": "https://github.com/zurb/inky.git",
